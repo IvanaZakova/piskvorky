@@ -1,0 +1,80 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#615dad, #ffc8da) fixed;
+}
+
+.menu {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uvodni-foto {
+  width: 350px;
+  height: auto;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+div {
+  background: #283e50;
+  width: 350px;
+  padding: 20px;
+}
+
+.buttons {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: ;
+}
+
+.pravidla {
+  border: none;
+  width: 350px;
+  padding: 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #1fcca4;
+}
+
+.hrat {
+  border: none;
+  border-top: 0.5px #283e50 solid;
+  width: 350px;
+  padding: 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #0197f6;
+}
+
+.pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.hrat:hover {
+  background-color: #0090e9;
+}
