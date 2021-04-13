@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piskvorky - Pravidla</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pravidla</h1>
+      <ol class="pravidla__seznam">
+        <li>Hra piškvorky je určena pro dva hráče.</li>
+        <li>Hraje se na hrací ploše 10×10, tvořené poli ve tvaru čtverce.</li>
+        <li>
+          Na začátku si hráči rozdělí role. Jeden bude hrát za kolečka
+          <img class="circle" src="pravidla_pics/circle.svg" alt="circle icon" />,
+          druhý bude hrát za křížky
+          <img class="cross" src="pravidla_pics/cross.svg" alt="cross icon" />.
+        </li>
+        <li>
+          Losem se určí, kdo bude začínat. V naší aplikaci to vylosujeme za vás.
+        </li>
+        <li>Hráči se střídají v tazích.</li>
+        <li>
+          Hráč, který je na tahu, umístí jeden ze svých symbolů na prázdné pole
+          na hrací ploše. Tj. hráč hrající za křížky umístí křížek, hráč hrající
+          za kolečka umístí kolečko.
+        </li>
+        <li>Křížky a kolečka se umisťují dovnitř políček na hrací ploše.</li>
+        <li>Hráč, který umístí pět svých symbolů do jedné řady, vyhrává.</li>
+        <li>
+          Výherní kombinací se rozumí pět symbolů ve směru vodorovném, svislém
+          nebo šikmém. Mezi pěti symboly tvořícími výherní kombinaci nesmí být
+          žádné prázdné pole ani pole obsazené soupeřovým symbolem.
+        </li>
+        <li>
+          Pokud hráči zaplní celou desku, aniž by někdo umístil pět svých
+          symbolů do jedné řady, hra končí remízou.
+        </li>
+      </ol>
+      <div class="priklady">
+        <figure class="priklady_obrazek">
+          <img src="pravidla_pics/instructions-01.jpg" alt="Situace po třech tazích" />
+          <figcaption class="priklady__popisek">
+            Situace po třech tazích - na tahu je hráč s kolečky
+          </figcaption>
+        </figure>
+        <figure class="priklady_obrazek">
+          <img src="pravidla_pics/instructions-02.jpg" alt="Situace po čtyřech tazích" />
+          <figcaption class="priklady__popisek">
+            Situace po čtyřech tazích
+          </figcaption>
+        </figure>
+        <figure class="priklady_obrazek">
+          <img src="pravidla_pics/instructions-03.jpg" alt="Výherní pozice kolečka" />
+          <figcaption class="priklady__popisek">
+            Výherní pozice hráče s kolečky
+          </figcaption>
+        </figure>
+        <figure class="priklady_obrazek">
+          <img src="pravidla_pics/instructions-04.jpg" alt="Nikdo nevyhrává" />
+          <figcaption class="priklady__popisek">
+            V této situaci nikdo nevyhrává. Pokud je na tahu hráč s kolečky,
+            může přidat další kolečko do šikmé řady, kde už má 4 kolečka, a
+            vyhraje.
+          </figcaption>
+        </figure>
+        <figure class="priklady_obrazek">
+          <img src="pravidla_pics/instructions-05.jpg" alt="Výherní pozice křížky" />
+          <figcaption class="priklady__popisek">
+            Výherní pozice hráče s křížky
+          </figcaption>
+        </figure>
+        <figure class="priklady_obrazek">
+          <img src="pravidla_pics/instructions-06.jpg" alt="Výherní pozice kolečky 2" />
+          <figcaption class="priklady__popisek">
+            Ještě jedna výherní pozice hráče s kolečky
+          </figcaption>
+        </figure>
+      </div>
+      <div class="tlacitka_pravidla">
+        <a href="index.html"><button class="tlacitko_uvod">Úvodní stránka</button><a>
+        <a href="index.html"><button class="tlacitko_hrat">Začít hrát</button></a>
+      </div>
+    </div>
+  </body>
+</html>
