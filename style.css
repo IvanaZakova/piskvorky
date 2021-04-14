@@ -6,6 +6,8 @@
   padding: 0;
 }
 
+/* PISKVORKY HOMEWORK NO. 1 */
+
 body {
   background: linear-gradient(#615dad, #ffc8da) fixed;
 }
@@ -16,14 +18,14 @@ body {
   color: white;
   font-size: 14px;
   line-height: 1.5;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.uvodni-foto {
+.menu-foto {
   width: 350px;
   height: auto;
   border-top-left-radius: 2%;
@@ -39,14 +41,15 @@ h1 {
   text-align: center;
 }
 
-div {
+.menu-text {
   background: #283e50;
   width: 350px;
   padding: 20px;
 }
 
-.buttons,
-.tlacitka_pravidla {
+/* PISKVORKY HOMEWORK NO. 1 - BUTTONS */
+
+.menu-buttons {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -54,7 +57,7 @@ div {
   align-items: center;
 }
 
-.uvodni-stranka {
+.btn-pravidla {
   border: none;
   width: 350px;
   padding: 15px;
@@ -63,18 +66,12 @@ div {
   background-color: #1fcca4;
 }
 
-.pravidla,
-.tlacitko_uvod {
-  border: none;
-  width: 350px;
-  padding: 15px;
-  font-size: 14px;
-  color: white;
-  background-color: #1fcca4;
+.btn-pravidla:hover,
+.btn-pravidla:focus {
+  background-color: #1cbb96;
 }
 
-.hrat,
-.tlacitko_hrat {
+.btn-hrat {
   border: none;
   border-top: 0.5px #283e50 solid;
   width: 350px;
@@ -85,30 +82,27 @@ div {
   width: 350px;
 }
 
-.pravidla:hover,
-.tlacitko_uvod:hover {
-  background-color: #1cbb96;
-}
-
-.hrat:hover,
-.tlacitko_hrat:hover {
+.btn-hrat:hover,
+.btn-hrat:focus {
   background-color: #0090e9;
 }
 
 /* PISKVORKY HOMEWORK NO. 2 */
 
 .container {
+  width: 350px;
+  min-width: 200px;
+  margin: 50px auto;
+  padding-top: 25px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: auto;
   background-color: #283e50;
   color: #ffffff;
-  margin: 50px auto;
-  padding-bottom: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  min-width: 200px;
 }
 
 .pravidla__seznam {
@@ -137,6 +131,32 @@ li {
   text-align: center;
 }
 
+/* PISKVORKY HOMEWORK NO. 2 - BUTTONS */
+
+.pravidla-buttons {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-uvod {
+  border: none;
+  width: 350px;
+  padding: 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #1fcca4;
+}
+
+.btn-uvod:hover,
+.btn-uvod:focus {
+  background-color: #1cbb96;
+}
+
+/* PISKVORKY HOMEWORK NO. 2 - MEDIA */
+
 img {
   width: 100%;
 }
@@ -156,4 +176,83 @@ img {
   .container {
     max-width: 630px;
   }
+}
+
+/* PISKVORKY HOMEWORK NO. 3 */
+
+.headerHra {
+  font-size: 60px;
+  padding-bottom: 15px;
+}
+
+.hra {
+  display: flex;
+  flex-direction: column;
+  width: 80vmin;
+  margin: 50px auto;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hraContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+/* PISKVORKY HOMEWORK NO. 3 - BUTTONS */
+
+.btn-homepage,
+.btn-restart {
+  width: 50px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-homepage {
+  background-color: #1fcca4;
+}
+
+.btn-homepage:hover,
+.btn-homepage:focus {
+  background-color: #1cbb96;
+}
+
+.btn-restart {
+  background-color: #0197f6;
+}
+
+.btn-restart:hover,
+.btn-restart:focus {
+  background-color: #0090e9;
+}
+
+/* PISKVORKY HOMEWORK NO. 3 - HRACI PLOCHA */
+
+.hraciaPlocha,
+.okienko {
+  border: 1px solid black;
+}
+
+.hraciaPlocha {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vmin;
+}
+
+.okienko {
+  padding: 0;
+  width: 8vmin;
+  height: 8vmin;
+  background-color: rgba(255, 252, 252, 0.384);
+}
+
+.okienko:hover,
+.okienko:focus {
+  background-color: rgba(255, 252, 252, 0.548);
 }
