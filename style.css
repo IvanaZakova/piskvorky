@@ -242,17 +242,23 @@ img {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  width: 80vmin;
+  width: 80.4vmin;
 }
 
 .okienko {
-  padding: 0;
-  width: 8vmin;
-  height: 8vmin;
+  width: 10%;
+  padding-top: 10%;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   background-color: rgba(255, 252, 252, 0.384);
 }
 
 .okienko:hover,
 .okienko:focus {
   background-color: rgba(255, 252, 252, 0.548);
+}
+
+.okienko:nth-child(10n) {
+  flex-grow: 1;
 }
