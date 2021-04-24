@@ -116,8 +116,7 @@ li {
   padding: 0px 35px 10px 10px;
 }
 
-.circle,
-.cross {
+.icons {
   width: 1em;
   height: 1em;
   filter: invert(100%);
@@ -203,6 +202,16 @@ img {
   padding-bottom: 15px;
 }
 
+.hraje {
+  display: flex;
+}
+
+.hrac {
+  height: 1em;
+  filter: invert(100%);
+  margin-left: 10px;
+}
+
 /* PISKVORKY HOMEWORK NO. 3 - BUTTONS */
 
 .btn-homepage,
@@ -261,4 +270,33 @@ img {
 
 .okienko:nth-child(10n) {
   flex-grow: 1;
+}
+
+/* PISKVORKY HOMEWORK NO. 4 - JS */
+
+.hraciaPlocha--circle {
+  background-image: url(pravidla_pics/circle.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-name: gradual-growth;
+  animation-duration: 0.15s;
+}
+
+.hraciaPlocha--cross {
+  background-image: url(pravidla_pics/cross.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-name: gradual-growth;
+  animation-duration: 0.15s;
+}
+
+@keyframes gradual-growth {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 65%;
+  }
 }
